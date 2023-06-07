@@ -55,8 +55,6 @@ const questions = [
         message: 'for questions',
         name: 'input'
     }
-
-
 ];
 
 // TODO: Create a function to write README file
