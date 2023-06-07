@@ -82,7 +82,8 @@ function writeToFile(fileName, data) {
         #Questions
     `;
 
-    fs.writeFile(`fileName.json`, readmeInterior, utf8, (err) => {
+    fs.writeFile(`fileName.json`, readmeInterior,
+    (err) => {
         if (err) throw err;
         console.log("data saved")
     })
