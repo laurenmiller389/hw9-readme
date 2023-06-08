@@ -7,6 +7,16 @@ const inquirer = require('inquirer');
 const questions = [
     {
         type: 'input',
+        message: 'what is your email?',
+        name: 'email'
+    },
+    {
+        type: 'input',
+        message: 'what is your GitHub username?',
+        name: 'gitUser'
+    },
+    {
+        type: 'input',
         message: 'what is the name of your project?',
         name: 'projectName'
     },
@@ -42,45 +52,21 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'for test',
+        message: 'provide test instructions',
         name: 'test'
     },
     {
         type: 'input',
         message: 'for questions',
-        name: 'input'
+        name: 'question'
     }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const readmeInterior =
-    `
-        # ${fileName}
-
-        ${data}
-
-        # Description
-
-        # Table of Contents
-
-        # Installation
-
-        # Usage
-
-        # License
-
-        # Contributing
-
-        # Tests
-
-        #Questions
-    `;
-
-    fs.writeFile(`fileName.json`, readmeInterior,
-    (err) => {
+    fs.writeFile(fileName, data, (err) => {
         if (err) throw err;
-        console.log("data saved")
+        console.log("data saved!")
     })
 }
 
