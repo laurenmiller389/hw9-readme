@@ -80,7 +80,7 @@ const handleAnswers = (answers) => {
 // TODO: Create a function to initialize app
 function init() {
     inquirer
-    .createPromptModule(questions)
+    .prompt(questions)
     .then(handleAnswers)
 }
 
