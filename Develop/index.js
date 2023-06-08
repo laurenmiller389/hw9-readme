@@ -4,11 +4,6 @@ const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 
-/* actually we dont't need inquirer if we are just using an array....
-inquirer
-    .createPromptModule([
-    ])
-*/
 const questions = [
     {
         type: 'input',
