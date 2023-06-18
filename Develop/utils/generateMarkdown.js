@@ -42,7 +42,7 @@ function renderLicenseSection(license) {
     return 'Creative Commons';
   }
   else if (license === 'GNU') {
-    return 'GNU'
+    return 'GNU';
   }
   else {
     return '';
@@ -64,7 +64,7 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  ${data.install}
+  ${data.instructions}
 
   ## Usage
 
@@ -86,8 +86,6 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions
-
-  ${data.question}
 
   GitHub Username: ${data.gitUser}
 

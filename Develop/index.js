@@ -28,11 +28,6 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'write out each subject for your table of contents',
-        name: 'TOC'
-    },
-    {
-        type: 'input',
         message: 'provide your installation instructions',
         name: 'instructions'
     },
@@ -55,11 +50,6 @@ const questions = [
         type: 'input',
         message: 'provide test instructions',
         name: 'test'
-    },
-    {
-        type: 'input',
-        message: 'for questions',
-        name: 'question'
     }
 ];
 
